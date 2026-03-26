@@ -129,3 +129,5 @@ SUM(weightInGms * availableQuantity) AS total_weight
 FROM zepto
 GROUP BY category
 ORDER BY total_weight;
+
+--END OF THE PROJECT
