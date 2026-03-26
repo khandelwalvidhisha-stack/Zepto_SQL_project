@@ -1,5 +1,5 @@
 # 🛒 Zepto E-commerce SQL Data Analyst Portfolio Project
-This is a real-world data analyst portfolio project based on an e-commerce inventory dataset scraped from [Zepto](https://www.zeptonow.com/) — one of India’s fastest-growing quick-commerce startups. 
+This is a real-world data analyst portfolio project based on an e-commerce inventory dataset scraped from [Zepto](https://www.zeptonow.com/) — one of India’s fastest-growing quick-commerce startups. The objective is to extract business insights from messy, real-world data using SQL; just like analysts working in retail, quick-commerce, or supply chain domains.
 
 
 
@@ -43,10 +43,10 @@ Each row represents a unique SKU (Stock Keeping Unit) for a product. Duplicate p
 
 ## 🔧 Project Workflow
 
-Here’s a step-by-step breakdown of what we do in this project:
+Here’s a step-by-step breakdown of what i did in this project:
 
 ### 1. Database & Table Creation
-We start by creating a SQL table with appropriate data types:
+I started it  by creating a SQL table with appropriate data types:
 
 ```sql
 CREATE TABLE zepto (
@@ -65,13 +65,6 @@ CREATE TABLE zepto (
 
 ### 2. Data Import
 - Loaded CSV using pgAdmin's import feature.
-
- - If you're not able to use the import feature, write this code instead:
-```sql
-   \copy zepto(category,name,mrp,discountPercent,availableQuantity,
-            discountedSellingPrice,weightInGms,outOfStock,quantity)
-  FROM 'data/zepto_v2.csv' WITH (FORMAT csv, HEADER true, DELIMITER ',', QUOTE '"', ENCODING 'UTF8');
-```
 - Faced encoding issues (UTF-8 error), which were fixed by saving the CSV file using CSV UTF-8 format.
 
 ### 3. 🔍 Data Exploration
@@ -110,4 +103,20 @@ CREATE TABLE zepto (
 - Measured total inventory weight per product category
 
 
+### 6. 📊 Key Insights
+-Significant pricing inconsistencies exist across categories
 
+-Certain high-value products are frequently out of stock which leads to  potential revenue loss
+
+-Bulk products often offer better value per gram
+
+-Discounts are unevenly distributed, indicating pricing strategy gaps
+
+### 7. Author
+Vidhisha Khandelwal
+- I am a Master's student in Economics
+- Aspiring Data Analyst
+- Skilled in SQL, Excel, STATA and Data analysis
+
+📎 LinkedIn: www.linkedin.com/in/vidhisha1812
+📎 Email: khandelwalvidhisha@gmail.com
